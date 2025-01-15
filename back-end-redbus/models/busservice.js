@@ -6,12 +6,6 @@ const busSchema = new mongoose.Schema({
   seater: Number,
   music: Boolean,
   charging: Boolean,
-  pricekm: Number,
-  img: String,
-  customer: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Customer",
-  },
 });
 
 module.exports = mongoose.model("BusServices", busSchema);
